@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* BACKGROUND */
+body{
+    background-image: url('https://images.unsplash.com/photo-1524704654690-b56c05c78a00?q=80&w=2000&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color:white;
+}
+
+/* HEADER */
+header{
+    padding:30px 8%;
+    font-size:28px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+/* CENTER CONTAINER */
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:80vh;
+}
+
+/* GLASS CARD */
+.admin-card{
+    background: rgba(30,30,30,0.4);
+    backdrop-filter: blur(15px);
+    border-radius:25px;
+    padding:50px;
+    width:350px;
+    text-align:center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* TITLE */
+.admin-card h1{
+    margin-bottom:30px;
+    font-size:28px;
+}
+
+/* BUTTONS */
+.btn {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 30px;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none; 
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: rgba(255,255,255,0.3);
+    transform: translateY(-2px);
+}
+
+/* EXIT BUTTON SPECIAL */
+.exit{
+    background: rgba(255, 80, 80, 0.6);
+}
+
+.exit:hover{
+    background: rgba(255, 80, 80, 0.9);
+}
+</style>
+
+</head>   
+
+<body>
+
+<header>AQUARIST-Admin</header>
+
+<div class="container">
+    <div class="admin-card">
+        <h1>Admin</h1>
+
+        <button class="btn">Add Task</button>
+        <button class="btn">Update Task</button>
+        <button class="btn">Delete Task</button>
+         <button class="btn">Complete Task</button>
+         <a href="aquarist.html" class="btn exit">Exit</a> 
+
+    </div>
+    
+</div>
+<a href="staff.html" class="btn staff-btn">Staff Portal</a>
+<div>
+        <p>© 2025 Aquarium Maintenance System | BSIT Project</p>
+    </div>
+</body>
+</html>

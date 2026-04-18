@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AQUARIST - Staff</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family: Arial;
+
+            background-image: url('https://images.unsplash.com/photo-1524704654690-b56c05c78a00?q=80&w=2000&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color:white;
+        }
+
+        /* HEADER */
+        .header{
+            background: rgba(0,0,0,0.5);
+            padding:15px 30px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .header button{
+          padding-top: 10px;
+          padding-bottom: 10px;   
+          padding-right: 20px;
+          padding-left: 20px;
+            background:#59adbe;
+            border:none;
+            color:white;
+            cursor:pointer;
+            border-radius: 17px;
+
+        }
+
+        .header button:hover {
+    background: #3d8fa3;
+    transform: scale(1.05);
+    padding-top: 12px;
+          padding-bottom: 12px;
+          padding-right: 23px;
+          padding-left: 23px;
+    transition: 0.3s;
+}
+
+      
+
+        .header a{
+            color:white;
+            text-decoration:none;
+        }
+
+        /* WELCOME */
+        .welcome{
+            text-align:center;
+            padding:20px;
+        }
+
+        /* TASK CONTAINER */
+        .tasks{
+            padding:20px;
+            max-width:600px;
+            margin:auto;
+        }
+
+        /* TASK CARD (GLASS STYLE) */
+        .task-card{
+            background: rgba(30,30,30,0.5);
+            backdrop-filter: blur(10px);
+            padding:15px;
+            margin-bottom:15px;
+            border-left:5px solid #00b4d8;
+            border-radius:10px;
+        }
+
+        .task-card h4{
+            margin-bottom:10px;
+        }
+
+        .task-card button{
+            padding:8px 15px;
+            background:#28a745;
+            color:white;
+            border:none;
+            cursor:pointer;
+            margin-top:10px;
+        }
+
+        .task-card button:hover{
+            background:#3bd65c;
+        }
+
+        .btn {
+    display: block;
+    width: 98%;
+    border: none;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 30px;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none; 
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: rgba(255,255,255,0.3);
+    transform: translateY(-2px);
+}
+
+
+
+    </style>
+</head>
+
+<body>
+<!-- HEADER -->
+<div class="header">
+    <h2>AQUARIST - Staff</h2>
+    <button><a href="aquarist.html">Logout</a></button>
+</div>
+
+<!-- WELCOME -->
+<div class="welcome">
+    <h3>Welcome, Staff!</h3>
+    <p>Here are your assigned aquarium tasks for today.</p>
+</div>
+
+<!-- TASK LIST -->
+<div class="tasks">
+
+    <div class="task-card">
+        <h4>Clean Aquarium Tank</h4>
+        <p><b>Date:</b> April 1, 2026</p>
+        <p><b>Time:</b> 9:00 AM</p>
+        <button>Mark as Completed</button>
+    </div>  
+
+    <div class="task-card">
+        <h4>Feed the Fish</h4>
+        <p><b>Date:</b> April 1, 2026</p>
+        <p><b>Time:</b> 12:00 PM</p>
+        <button>Mark as Completed</button>
+    </div>
+
+    <div class="task-card">
+        <h4>Check Water Quality</h4>
+        <p><b>Date:</b> April 1, 2026</p>
+        <p><b>Time:</b> 3:00 PM</p>
+        <button>Mark as Completed</button>
+    </div>
+
+</div>
+<a href="admin.html" class="btn admin-btn">Admin Portal</a>
+
+<!-- FOOTER -->
+    <div>
+        <p>© 2025 Aquarium Maintenance System | BSIT Project</p>
+    </div>
+
+</body>
+</html>
